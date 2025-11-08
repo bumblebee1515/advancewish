@@ -234,7 +234,7 @@
       const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
       document.getElementById("countdown").innerHTML =
-        `${days} Days ${minutes} Minutes ${seconds} Seconds left 💫`;
+        ` ${days} Days  ${minutes} Minutes ${seconds} Seconds left ⏳`;
 
       if (distance < 0) {
         document.getElementById("countdown").innerHTML = "🎉Advanced Happy Birthday My Love! 🎉";
@@ -242,4 +242,5 @@
     }, 1000);
   </script>
 </body>
+
 </html>
