@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday My Love🎂</title>
+  <style>
+    /* 🌌 Background + Font */
+    body {
+      background: radial-gradient(circle at top, #0f0f1b, #1b1b2f);
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+      overflow-x: hidden;
+      padding: 0;
+      margin: 0;
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ✨ Sparkling Stars */
+    .stars {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: 0;
+    }
+
+    .star {
+      position: absolute;
+      width: 3px;
+      height: 3px;
+      background: white;
+      border-radius: 50%;
+      opacity: 0;
+      animation: sparkle 3s infinite ease-in-out;
+    }
+
+    @keyframes sparkle {
+      0%, 100% { transform: scale(0); opacity: 0; }
+      50% { transform: scale(1.5); opacity: 1; }
+    }
+
+    /* 💖 Header */
+    header {
+      position: relative;
+      z-index: 2;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(5px);
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(255, 105, 180, 0.3);
+    }
+
+    header h2 {
+      color: #ff69b4;
+      margin: 0;
+      font-size: 1.8em;
+      text-shadow: 0 0 10px #ff69b4;
+    }
+
+    header p {
+      margin: 5px 0 0;
+      font-size: 0.9em;
+      color: #ffc0cb;
+      font-style: italic;
+    }
+
+    /* 🎂 Main Content */
+    main {
+      position: relative;
+      z-index: 1;
+      flex: 1;
+      padding: 30px 20px 60px;
+    }
+
+    h1 {
+      font-size: 2em;
+      color: #ff69b4;
+      text-shadow: 0 0 15px #ff69b4;
+    }
+
+    .countdown {
+      font-size: 1.4em;
+      margin-top: 20px;
+      color: #ffb6c1;
+    }
+
+    .message {
+      margin-top: 30px;
+      font-size: 1.1em;
+      line-height: 1.7em;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .music-box {
+      margin-top: 40px;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(255, 105, 180, 0.4);
+      display: inline-block;
+    }
+
+    audio {
+      margin-top: 10px;
+      width: 90%;
+      max-width: 300px;
+    }
+
+    .heart {
+      font-size: 3em;
+      color: #ff69b4;
+      animation: pulse 1.5s infinite;
+      margin-top: 30px;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); opacity: 0.8; }
+      50% { transform: scale(1.2); opacity: 1; }
+    }
+
+    /* 💌 Footer */
+    footer {
+      position: relative;
+      z-index: 2;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(5px);
+      color: #ffb6c1;
+      padding: 10px 0;
+      font-size: 0.9em;
+      text-align: center;
+      box-shadow: 0 -2px 10px rgba(255, 105, 180, 0.3);
+    }
+
+    footer span {
+      color: #ff69b4;
+      font-weight: bold;
+    }
+
+    /* 📱 Responsive Layout */
+    @media (max-width: 600px) {
+      header h2 { font-size: 1.5em; }
+      h1 { font-size: 1.6em; }
+      .message { font-size: 1em; padding: 0 10px; }
+      .countdown { font-size: 1.2em; }
+    }
+  </style>
+</head>
+<body>
+  <!-- ✨ Sparkling Stars Background -->
+  <div class="stars">
+    <!-- 25 stars -->
+    <div class="star" style="top:10%; left:20%; animation-delay:0s;"></div>
+    <div class="star" style="top:30%; left:40%; animation-delay:1s;"></div>
+    <div class="star" style="top:50%; left:60%; animation-delay:2s;"></div>
+    <div class="star" style="top:80%; left:30%; animation-delay:3s;"></div>
+    <div class="star" style="top:70%; left:70%; animation-delay:1.5s;"></div>
+    <div class="star" style="top:20%; left:80%; animation-delay:2.5s;"></div>
+    <div class="star" style="top:40%; left:10%; animation-delay:3.5s;"></div>
+    <div class="star" style="top:60%; left:50%; animation-delay:1.2s;"></div>
+    <div class="star" style="top:15%; left:65%; animation-delay:2.8s;"></div>
+    <div class="star" style="top:85%; left:80%; animation-delay:0.8s;"></div>
+    <div class="star" style="top:25%; left:45%; animation-delay:3.2s;"></div>
+    <div class="star" style="top:90%; left:20%; animation-delay:1.8s;"></div>
+    <div class="star" style="top:55%; left:75%; animation-delay:2.3s;"></div>
+    <div class="star" style="top:10%; left:50%; animation-delay:3.6s;"></div>
+    <div class="star" style="top:35%; left:85%; animation-delay:1.1s;"></div>
+    <div class="star" style="top:65%; left:15%; animation-delay:2.9s;"></div>
+    <div class="star" style="top:75%; left:55%; animation-delay:0.5s;"></div>
+    <div class="star" style="top:45%; left:35%; animation-delay:1.3s;"></div>
+    <div class="star" style="top:95%; left:90%; animation-delay:2.7s;"></div>
+    <div class="star" style="top:5%; left:5%; animation-delay:1.6s;"></div>
+    <div class="star" style="top:25%; left:25%; animation-delay:2.1s;"></div>
+    <div class="star" style="top:85%; left:45%; animation-delay:0.9s;"></div>
+    <div class="star" style="top:50%; left:90%; animation-delay:3.1s;"></div>
+    <div class="star" style="top:65%; left:70%; animation-delay:0.7s;"></div>
+    <div class="star" style="top:30%; left:60%; animation-delay:2.4s;"></div>
+  </div>
+
+  <!-- 🌙 Header -->
+  <header>
+    <h2>My Queen’s Special Day</h2>
+    <p>Because every second with you is worth celebrating🌟</p>
+  </header>
+
+  <!-- 🎂 Main Content -->
+  <main>
+    <h1>Advanced Happy Birthday My Love🎉</h1>
+    <div class="countdown" id="countdown"></div>
+
+    <div class="message">
+      <p>Hey my dearest love,</p>
+      <p>You’re the melody of my heart, the spark of my soul, and the reason my world glows brighter every day.🌙</p>
+      <p>As your birthday approaches, I made this little corner of the internet just for you — filled with love, laughter, and endless memories. 💌</p>
+      <p>Every second that ticks brings me closer to celebrating the day you were born — the day my universe found its light.💖</p>
+      <p>Counting down not just to your birthday, but to another year of us, together forever.❤️</p>
+    </div>
+
+    <div class="music-box">
+      <h3>A Song Just for You 🎶</h3>
+      <audio controls autoplay loop>
+        <source src="song.mp3" type="audio/mpeg" />
+        Your browser does not support the audio tag.
+      </audio>
+    </div>
+
+    <div class="heart">❤️</div>
+  </main>
+
+  <!-- 💌 Footer -->
+  <footer>
+    Made with endless love by <span>BumbleBee💕</span><br>
+    ©2025 | For My Girl👑
+  </footer>
+
+  <!-- ⏰ Countdown Script -->
+  <script>
+    const targetDate = new Date("December 15, 2025 00:00:00").getTime();
+
+    setInterval(() => {
+      const now = new Date().getTime();
+      const distance = targetDate - now;
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById("countdown").innerHTML =
+        `${days} Days ${minutes} Minutes ${seconds} Seconds left 💫`;
+
+      if (distance < 0) {
+        document.getElementById("countdown").innerHTML = "🎉Advanced Happy Birthday My Love! 🎉";
+      }
+    }, 1000);
+  </script>
+</body>
+</html>
